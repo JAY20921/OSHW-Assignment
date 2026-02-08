@@ -1,0 +1,205 @@
+.universal-component {
+  background-color: #2d2d2d;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  min-width: 160px;
+  max-width: 320px;
+}
+
+.universal-component:hover {
+  border-color: #61dafb;
+}
+
+.universal-component.dragging {
+  opacity: 0.8;
+  box-shadow: 0 8px 16px rgba(97, 218, 251, 0.4);
+  border-color: #61dafb;
+  z-index: 1000;
+}
+
+.universal-component.microcontroller {
+  min-width: 280px;
+  border-color: #61dafb;
+}
+
+.context-menu {
+  position: absolute;
+  top: -10px;
+  right: -150px;
+  background-color: #1e1e1e;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  min-width: 140px;
+}
+
+.menu-item {
+  display: block;
+  width: 100%;
+  padding: 8px 12px;
+  margin: 2px 0;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #61dafb;
+  color: #1e1e1e;
+  border-color: #61dafb;
+  transform: translateX(2px);
+}
+
+.component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+  gap: 10px;
+}
+
+.component-name {
+  font-weight: 600;
+  font-size: 13px;
+  color: #61dafb;
+  flex: 1;
+}
+
+.component-category {
+  font-size: 10px;
+  color: #888;
+  background-color: #1e1e1e;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.component-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  min-height: 60px;
+}
+
+.pin-selectors {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pin-selector-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.pin-selector-row label {
+  font-size: 11px;
+  color: #aaa;
+  font-weight: 500;
+  min-width: 50px;
+}
+
+.pin-select {
+  flex: 1;
+  padding: 4px 8px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pin-select:hover {
+  border-color: #61dafb;
+}
+
+.pin-select:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.component-status {
+  margin-top: 8px;
+  padding: 6px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+  font-size: 10px;
+  color: #888;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Category-specific styling */
+.universal-component.input {
+  border-color: #ffd700;
+}
+
+.universal-component.output {
+  border-color: #ff6b6b;
+}
+
+.universal-component.sensor {
+  border-color: #4ecdc4;
+}
+
+.universal-component.display {
+  border-color: #95e1d3;
+}
+
+.universal-component.actuator {
+  border-color: #f38181;
+}
+
+.universal-component.passive {
+  border-color: #aa96da;
+}
+
+/* Wokwi element sizing */
+wokwi-led,
+wokwi-rgb-led {
+  width: 50px;
+  height: 50px;
+}
+
+wokwi-pushbutton {
+  cursor: pointer;
+}
+
+wokwi-potentiometer {
+  cursor: pointer;
+}
+
+wokwi-servo {
+  width: 80px;
+}
+
+wokwi-lcd1602,
+wokwi-ssd1306 {
+  width: 200px;
+}
+
+wokwi-arduino-uno,
+wokwi-arduino-mega,
+wokwi-arduino-nano {
+  display: block;
+}

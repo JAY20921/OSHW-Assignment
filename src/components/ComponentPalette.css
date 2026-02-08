@@ -1,0 +1,132 @@
+.component-palette {
+  width: 280px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  padding: 15px;
+  border-right: 2px solid #444;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.component-palette h3 {
+  margin: 0 0 15px 0;
+  font-size: 16px;
+  color: #61dafb;
+  text-align: center;
+}
+
+.palette-search {
+  margin-bottom: 15px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px 12px;
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.category-tabs button {
+  padding: 6px 10px;
+  background-color: #1e1e1e;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+
+.category-tabs button:hover {
+  background-color: #3d3d3d;
+  border-color: #61dafb;
+}
+
+.category-tabs button.active {
+  background-color: #61dafb;
+  color: #1e1e1e;
+  border-color: #61dafb;
+}
+
+.component-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.component-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background-color: #3d3d3d;
+  border: 1px solid #555;
+  border-radius: 6px;
+  cursor: grab;
+  transition: all 0.2s;
+  min-height: 45px;
+}
+
+.component-item:hover {
+  background-color: #4d4d4d;
+  border-color: #61dafb;
+  transform: translateX(3px);
+  box-shadow: 0 2px 8px rgba(97, 218, 251, 0.3);
+}
+
+.component-item:active {
+  cursor: grabbing;
+  transform: scale(0.98);
+}
+
+.component-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.component-label {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.no-results {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 13px;
+}
+
+.palette-info {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 6px;
+  font-size: 11px;
+  color: #aaa;
+  border-top: 1px solid #444;
+}
+
+.palette-info p {
+  margin: 3px 0;
+}

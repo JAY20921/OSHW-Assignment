@@ -1,0 +1,115 @@
+.canvas {
+  flex: 1;
+  position: relative;
+  background-color: #1a1a1a;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+  overflow: auto;
+  min-height: 500px;
+  transition: background-color 0.2s;
+}
+
+.canvas.drag-over {
+  background-color: #252525;
+  border: 3px dashed #61dafb;
+}
+
+.canvas-placeholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #666;
+  pointer-events: none;
+}
+
+.canvas-placeholder h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  color: #888;
+}
+
+.canvas-placeholder p {
+  font-size: 16px;
+  margin: 0;
+  color: #666;
+}
+
+.drop-indicator {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px 60px;
+  background-color: rgba(97, 218, 251, 0.1);
+  border: 3px dashed #61dafb;
+  border-radius: 20px;
+  color: #61dafb;
+  font-size: 24px;
+  font-weight: 600;
+  pointer-events: none;
+  animation: pulse-border 1s infinite;
+}
+
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: #61dafb;
+    background-color: rgba(97, 218, 251, 0.1);
+  }
+  50% {
+    border-color: #4fa8c5;
+    background-color: rgba(97, 218, 251, 0.2);
+  }
+}
+
+.circuit-info {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #2d2d2d;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: #ffffff;
+  min-width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.circuit-info h4 {
+  margin: 0 0 12px 0;
+  color: #4caf50;
+  font-size: 15px;
+}
+
+.circuit-info p {
+  margin: 6px 0;
+  font-size: 13px;
+  color: #ccc;
+  font-family: 'Courier New', monospace;
+}
+
+.status-running {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  color: #4caf50 !important;
+  font-weight: 600;
+  animation: pulse 1.5s infinite;
+}
+
+.status-ready {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #444;
+  color: #61dafb !important;
+  font-weight: 600;
+}
+
+.canvas-placeholder .hint {
+  font-size: 14px;
+  color: #888;
+  margin-top: 10px;
+}

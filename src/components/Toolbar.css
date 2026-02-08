@@ -1,0 +1,114 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #1e1e1e;
+  border-bottom: 2px solid #444;
+  color: #ffffff;
+  gap: 20px;
+}
+
+.toolbar-section {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toolbar h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #61dafb;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0;
+  border: 1px solid #555;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.view-toggle button {
+  padding: 8px 20px;
+  background-color: #2d2d2d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 14px;
+  border-right: 1px solid #555;
+}
+
+.view-toggle button:last-child {
+  border-right: none;
+}
+
+.view-toggle button:hover {
+  background-color: #3d3d3d;
+}
+
+.view-toggle button.active {
+  background-color: #61dafb;
+  color: #1e1e1e;
+  font-weight: 600;
+}
+
+.simulation-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-start,
+.btn-stop {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-start {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-start:hover:not(:disabled) {
+  background-color: #45a049;
+  transform: translateY(-1px);
+}
+
+.btn-start:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-stop {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-stop:hover {
+  background-color: #da190b;
+  transform: translateY(-1px);
+}
+
+.simulation-indicator {
+  color: #4caf50;
+  font-size: 14px;
+  font-weight: 600;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}

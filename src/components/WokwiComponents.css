@@ -1,0 +1,114 @@
+.wokwi-component {
+  background-color: #2d2d2d;
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  min-width: 200px;
+}
+
+.wokwi-component:hover {
+  border-color: #61dafb;
+}
+
+.component-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+}
+
+.component-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #61dafb;
+}
+
+.pin-selector {
+  padding: 4px 8px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border: 1px solid #555;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pin-selector:hover {
+  border-color: #61dafb;
+}
+
+.pin-selector:focus {
+  outline: none;
+  border-color: #61dafb;
+}
+
+.arduino-component {
+  min-width: 300px;
+}
+
+.arduino-component .component-label {
+  font-size: 16px;
+  display: block;
+  text-align: center;
+}
+
+.led-component {
+  min-width: 150px;
+}
+
+.led-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.led-status {
+  font-size: 12px;
+  color: #aaa;
+  font-weight: 500;
+  padding: 4px 8px;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+}
+
+.button-component {
+  min-width: 180px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.button-instruction {
+  font-size: 11px;
+  color: #aaa;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Wokwi element styling overrides */
+wokwi-led,
+wokwi-pushbutton,
+wokwi-arduino-uno {
+  display: block;
+}
+
+wokwi-led {
+  width: 60px;
+  height: 60px;
+}
+
+wokwi-pushbutton {
+  cursor: pointer;
+}
