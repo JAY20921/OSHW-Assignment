@@ -1,4 +1,4 @@
-# Arduino Simulator - FOSSEE OSHW Internship 2025
+# Arduino Simulator - FOSSEE OSHW Internship 2026
 
 A web-based Arduino simulator built for the FOSSEE Semester Long Internship screening task. This simulator allows users to drag-and-drop Arduino components (Arduino Uno, LED, Push Button), automatically wire them, generate Arduino code, and simulate circuit behavior.
 
